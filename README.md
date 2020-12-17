@@ -6,16 +6,18 @@ We augmented the [Embrapa Wine Grape Instance Segmentation Dataset](https://gith
 Make sure:  
 - Tensorflow==1.15.2  
 - Keras==2.1.6  
+- Clone the wgisd dataset to the current folder by ```git clone https://github.com/thsant/wgisd.git```  
+- The code of ```mrcnn``` module is already in the directory
 
-## Detection 
+## Quick Start
+### Use Trained Model to Detect
 Open [detection.ipynb](https://github.com/LesleyDing/Grape-Segmentation/blob/main/detection.ipynb) and run all cells.  
 Or, if you have your own grape full plant images, you can change ```IMAGE_DIR``` to your directory and run the code.
 
-## Quick Start to Train the Mask R-CNN on Dataset.
-### Data Augmentation
-First, clone the wgisd dataset to the current folder by ```git clone https://github.com/thsant/wgisd.git```.   
-Then make sure that [data_augmentation.ipynb](https://github.com/LesleyDing/Grape-Segmentation/blob/main/wgisd/data_augmentation.ipynb) is inside wgisd folder.  
-Open [data_augmentation.ipynb](http://www.example.com) and run all cells.
+### Train the Mask R-CNN on Dataset
+#### Data Augmentation
+First, make sure that [data_augmentation.ipynb](https://github.com/LesleyDing/Grape-Segmentation/blob/main/wgisd/data_augmentation.ipynb) is inside wgisd folder.  
+Then open [data_augmentation.ipynb](http://www.example.com) and run all cells.
 
-### Train and evaluate the model
+#### Train and evaluate the model
 Open [grapes.ipynb](https://github.com/LesleyDing/Grape-Segmentation/blob/main/grapes.ipynb) and run all cells.
